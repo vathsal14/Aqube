@@ -51,20 +51,12 @@ const About = () => {
             <div className="bg-gradient-to-br from-blue-600 to-purple-600 rounded-2xl p-8 shadow-2xl">
               <div className="grid grid-cols-2 gap-6 text-center">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <div className="text-3xl font-bold text-white mb-2">50K+</div>
+                  <div className="text-3xl font-bold text-white mb-2">1K+</div>
                   <div className="text-blue-200">Pre-Registered Users</div>
                 </div>
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
                   <div className="text-3xl font-bold text-white mb-2">1M+</div>
                   <div className="text-blue-200">Points Earned</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <div className="text-3xl font-bold text-white mb-2">500+</div>
-                  <div className="text-blue-200">Gaming Partners</div>
-                </div>
-                <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6">
-                  <div className="text-3xl font-bold text-white mb-2">0%</div>
-                  <div className="text-blue-200">Interest Rate</div>
                 </div>
               </div>
             </div>
