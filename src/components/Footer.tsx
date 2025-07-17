@@ -2,7 +2,11 @@
 import { motion } from 'framer-motion';
 import { Gamepad2, Mail, Phone, MapPin } from 'lucide-react';
 
-const Footer = () => {
+interface FooterProps {
+  onSurveyClick?: () => void;
+}
+
+const Footer = ({ onSurveyClick }: FooterProps) => {
   const quickLinks = [
     { title: 'Home', href: '#home' },
     { title: 'Features', href: '#features' },
@@ -114,7 +118,8 @@ const Footer = () => {
                 Share your gaming preferences and financial needs to help us create the perfect credit card for you.
               </p>
               <motion.a
-                href="#survey"
+                onClick={onSurveyClick ? (e) => { e.preventDefault(); onSurveyClick(); } : undefined}
+                href="#"
                 className="inline-block bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-2 rounded-lg text-sm font-medium hover:from-orange-600 hover:to-orange-700 transition-all duration-200"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}

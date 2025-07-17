@@ -279,7 +279,7 @@ const Index = () => {
             </section>
           </motion.main>
           
-          <Footer />
+          <Footer onSurveyClick={() => setIsSurveyModalOpen(true)} />
           
           {isAuthModalOpen && (
             <AuthPage onClose={() => setIsAuthModalOpen(false)} />
