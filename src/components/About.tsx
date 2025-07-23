@@ -1,13 +1,45 @@
 
 import { motion } from 'framer-motion';
-import { Target, Zap, Users, TrophyIcon, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 const About = () => {
   const stats = [
-    { icon: Users, value: '1K+', label: 'Pre Registers', color: 'text-orange-400' },
-    { icon: TrophyIcon, value: '100K+', label: 'points claimed', color: 'text-yellow-400' },
-    { icon: Zap, value: '99.9%', label: 'System Uptime', color: 'text-orange-500' },
-    { icon: Target, value: '24/7', label: 'Gamer Support', color: 'text-red-400' }
+    { 
+      logo: '/logos/nvidia-logo.png', 
+      value: 'NVIDIA', 
+      label: 'Inception Program', 
+      color: 'text-green-400',
+      subtext: 'Member of the elite AI and gaming startup accelerator',
+      width: 120,
+      height: 40
+    },
+    { 
+      logo: '/logos/microsoft-logo.png', 
+      value: 'Microsoft', 
+      label: 'for Startups', 
+      color: 'text-blue-400',
+      subtext: 'Recognized startup in the Microsoft ecosystem',
+      width: 140,
+      height: 40
+    },
+    { 
+      logo: '/logos/google-logo.png', 
+      value: 'Google', 
+      label: 'for Startups', 
+      color: 'text-red-400',
+      subtext: 'Backed by Google Cloud for innovative solutions',
+      width: 100,
+      height: 40
+    },
+    { 
+      logo: '/logos/aws-logo.png', 
+      value: 'AWS', 
+      label: 'Activate', 
+      color: 'text-yellow-400',
+      subtext: 'Powered by AWS cloud infrastructure',
+      width: 80,
+      height: 40
+    }
   ];
 
   return (
@@ -91,17 +123,25 @@ const About = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.6, delay: 0.1 * index }}
                   viewport={{ once: true }}
-                  className="group bg-gradient-to-br from-gray-800/50 to-gray-900/50 backdrop-blur-sm rounded-2xl p-8 border border-orange-500/20 hover:border-orange-500/40 transition-all duration-300 hover:transform hover:scale-105 text-center"
+                  className="group bg-gradient-to-br from-gray-600/20 to-gray-700/25 backdrop-blur-sm rounded-2xl p-8 border border-orange-500/5 hover:border-orange-500/15 transition-all duration-300 hover:transform hover:scale-[1.02] text-center hover:bg-gray-600/30"
                 >
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-500/5 to-yellow-500/5 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                  <div className="absolute inset-0 bg-gradient-to-br from-orange-400/10 to-yellow-400/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                   
-                  <stat.icon className={`w-12 h-12 ${stat.color} mx-auto mb-4 transform group-hover:scale-110 transition-transform duration-300`} />
-                  <div className={`text-4xl font-bold ${stat.color} mb-2`}>
+                  <div className="relative w-full h-16 flex items-center justify-center mb-4">
+                    <img 
+                      src={stat.logo} 
+                      alt={`${stat.value} ${stat.label}`}
+                      width={stat.width}
+                      height={stat.height}
+                      className="object-contain max-h-full max-w-full transform group-hover:scale-105 transition-transform duration-300"
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className={`text-3xl font-bold ${stat.color} mb-1`}>
                     {stat.value}
                   </div>
-                  <div className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">
-                    {stat.label}
-                  </div>
+                  <p className="text-gray-200 uppercase text-sm tracking-wider font-medium">{stat.label}</p>
+                  <p className="text-gray-400 text-xs mt-2">{stat.subtext}</p>
                 </motion.div>
               ))}
             </div>
