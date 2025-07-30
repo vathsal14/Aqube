@@ -9,18 +9,18 @@ const About = () => {
       value: 'NVIDIA', 
       label: 'Inception Program', 
       color: 'text-green-400',
-      subtext: 'Member of the elite AI and gaming startup accelerator',
-      width: 120,
-      height: 40
+      subtext: '',
+      width: 280,
+      height: 200
     },
     { 
       logo: '/logos/microsoft-logo.jpg', 
       value: 'Microsoft', 
       label: 'for Startups', 
       color: 'text-blue-400',
-      subtext: 'Recognized startup in the Microsoft ecosystem',
-      width: 140,
-      height: 40
+      subtext: '',
+      width: 350,
+      height: 200
     }
     
   ];
