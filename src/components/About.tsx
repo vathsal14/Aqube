@@ -5,7 +5,7 @@ import { CheckCircle } from 'lucide-react';
 const About = () => {
   const stats = [
     { 
-      logo: '/logos/nvidia-logo.png', 
+      logo: '/logos/nvidia-logo.jpg', 
       value: 'NVIDIA', 
       label: 'Inception Program', 
       color: 'text-green-400',
@@ -14,32 +14,15 @@ const About = () => {
       height: 40
     },
     { 
-      logo: '/logos/microsoft-logo.png', 
+      logo: '/logos/microsoft-logo.jpg', 
       value: 'Microsoft', 
       label: 'for Startups', 
       color: 'text-blue-400',
       subtext: 'Recognized startup in the Microsoft ecosystem',
       width: 140,
       height: 40
-    },
-    { 
-      logo: '/logos/google-logo.png', 
-      value: 'Google', 
-      label: 'for Startups', 
-      color: 'text-red-400',
-      subtext: 'Backed by Google Cloud for innovative solutions',
-      width: 100,
-      height: 40
-    },
-    { 
-      logo: '/logos/aws-logo.png', 
-      value: 'AWS', 
-      label: 'Activate', 
-      color: 'text-yellow-400',
-      subtext: 'Powered by AWS cloud infrastructure',
-      width: 80,
-      height: 40
     }
+    
   ];
 
   return (
