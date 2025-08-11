@@ -9,7 +9,7 @@ const About = () => {
       value: 'NVIDIA', 
       label: 'Inception Program', 
       color: 'text-green-400',
-      subtext: '',
+      subtext: '© 2025 NVIDIA, the NVIDIA logo, and NVIDIA Inception program are trademarks and/or registered trademarks of NVIDIA Corporation in the U.S. and other countries.',
       width: 280,
       height: 200
     },
